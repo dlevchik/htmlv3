@@ -20,6 +20,7 @@
             <div class="numbers">
                 <h3>+7(499) 777-77-77</h3>
                 <h3>+7(499) 777-77-77</h3>
+                <a href="#" id="openModal">Обратная связь</a>
             </div>
         </div>
     </header>
@@ -50,11 +51,11 @@
     ==================== -->
     <main class="content">
         <div class="container">
-            <aside class="automobiles">
+            <aside class="leftblock">
                 
             </aside>
 
-            <section class="goods">
+            <section class="catalog centerblock">
                 
             </section>
         </div>
@@ -86,5 +87,34 @@
             </div>
         </div>
     </footer>
+     <!-- ====================
+            footer
+    ==================== -->
+    <section class="feedback" id="feedback">
+        <form action="" method="post">
+            <button class="close" id="close">&#10005;</button>
+            <h2>Обратная связь</h2>
+            <div class="form-item">
+                <label for="name">Ваше имя *</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-item">
+                <label for="number">Телефон *</label>
+                <input type="phone" id="number">
+            </div>
+            <div class="form-item">
+                <label for="email">Email *</label>
+                <input type="email" id="email" class="error">
+            </div>
+            <div class="form-item">
+                <label for="message">Сообщение *</label>
+                <textarea id="" id="message"></textarea>
+            </div>
+            <input class="submit-btn" type="submit" value="ОТПРАВИТЬ">
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

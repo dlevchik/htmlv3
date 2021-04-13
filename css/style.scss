@@ -32,6 +32,10 @@ body{
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 22px;
+
+    &.modal-opened{
+        overflow: hidden;
+    }
 }
 
 @font-face {
@@ -51,16 +55,21 @@ header{
     }
 
     .numbers{
+        text-align: right;
         margin-left: auto;
         font-family: 'PT Sans numbers', sans-serif; //<-Adding @font-face 
+
+        #openModal{
+            font-size: 2rem;
+            display: inline-block;
+            padding-bottom: 3px;
+            border-bottom: 3px dotted;
+        }
     }
 
     h3{
         font-size: 2.5rem;
-        
-        &:first-child{
-            margin-bottom: 20px;
-        }
+        margin-bottom: 20px;
     }
 }
 
@@ -102,7 +111,7 @@ menu{
         padding: 35px 10px;
     }
 
-    .automobiles{
+    aside{
         width: 350px;
         height: fit-content;
         margin-right: auto;
@@ -142,6 +151,67 @@ footer{
         .developer-logo{
             margin-top: 5px;
             margin-right: 10px;
+        }
+    }
+}
+
+.feedback{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    form{
+        background-color: white;
+        text-align: center;
+        padding: 60px;
+        border: 1px solid black;
+        width: 465px;
+        position: relative;
+
+        .close{
+            position: absolute;
+            top: -34px;
+            right: -28px;
+            background-color: $gray;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 1.2rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
+        .form-item{
+            display: flex;
+            flex-direction: column;
+            margin: 25px 0;
+
+            input{
+                padding: 7px;
+
+                &.error{
+                    border: 1px solid red;
+                    box-shadow: 0 0 5px red inset;
+                }
+            }
+        }
+
+        .submit-btn{
+            background-color: $gray;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 7px 15px;
+            font-weight: bold;
         }
     }
 }
