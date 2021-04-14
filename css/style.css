@@ -6,7 +6,7 @@
   margin: 0; }
 
 .container {
-  width: 980px;
+  max-width: 980px;
   padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +94,71 @@ menu .nav li:not(:last-child)::after {
   background-size: 80% auto;
   height: 400px; }
 
-.content .container {
+.slider .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  overflow: hidden; }
+
+.slider .control {
+  position: absolute;
+  background-color: #d1d1d1;
+  font-size: 2rem;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.slider .slider-element {
+  width: 100%;
+  height: 100%; }
+
+.slider .left-control {
+  left: 0; }
+
+.slider .right-control {
+  right: 0; }
+
+.slider .slide-number {
+  display: inline-block;
+  margin: 60px 0 0 60px;
+  font-size: 7rem;
+  color: #f8f8f8;
+  background-clip: text;
+  text-shadow: 2px 2px 5px black; }
+
+.content {
+  color: #767676; }
+
+.content .breadcrumps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin-top: 10px; }
+
+.content .breadcrumps li:not(:last-child) a {
+  text-decoration: underline; }
+
+.content .breadcrumps li:not(:last-child)::after {
+  content: ' / ';
+  text-decoration: none;
+  margin: 0 10px; }
+
+.content .catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -104,8 +168,8 @@ menu .nav li:not(:last-child)::after {
           justify-content: space-between;
   padding: 35px 10px; }
 
-.content aside {
-  width: 350px;
+.content .leftblock {
+  width: 200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -117,6 +181,128 @@ menu .nav li:not(:last-child)::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.content .leftblock .categories {
+  list-style: none;
+  font-size: 1.1rem; }
+
+.content .leftblock .categories > li {
+  margin: 10px 0 10px 0; }
+
+.content .leftblock .categories .subcategory {
+  font-size: 1rem;
+  margin-left: 25px;
+  list-style: disc;
+  display: none; }
+
+.content .leftblock .categories .subcategory a:hover {
+  font-weight: bold; }
+
+.content .leftblock .categories li:hover > a {
+  text-decoration: underline; }
+
+.content .leftblock .categories li:hover > .subcategory {
+  display: block; }
+
+.content .leftblock .price-list {
+  margin-top: 60px;
+  text-align: center;
+  color: black; }
+
+.content .centerblock {
+  width: 740px;
+  margin-left: auto; }
+
+.content .centerblock .store {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  grid-gap: 10px; }
+
+.content .centerblock .store .store-item {
+  width: 240px;
+  height: 380px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #dcdcdc; }
+
+.content .centerblock .store .store-item .store-item-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
+
+.content .centerblock .store .store-item .store-item-body .store-item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.content .centerblock .store .store-item .store-item-body .store-item-footer .price {
+  font-size: 1.3rem;
+  font-weight: bold; }
+
+.content .centerblock .store .store-item .store-item-body .store-item-footer .buyBtn {
+  width: 28px;
+  height: 21px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/save_to_buy.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.content .centerblock .pagination {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0; }
+
+.content .centerblock .pagination li {
+  margin: 0 .5rem; }
+
+.content .centerblock .pagination li.active {
+  font-weight: bold;
+  font-size: 1.1rem; }
+
+.content .centerblock .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 100px; }
+
+.content .centerblock .info p {
+  width: 45%; }
 
 footer {
   background-color: #777777;
@@ -155,7 +341,9 @@ footer .developer .developer-logo {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -196,12 +384,25 @@ footer .developer .developer-logo {
   margin: 25px 0; }
 
 .feedback form .form-item input {
-  padding: 7px; }
+  padding: 10px; }
 
 .feedback form .form-item input.error {
   border: 1px solid red;
   -webkit-box-shadow: 0 0 5px red inset;
           box-shadow: 0 0 5px red inset; }
+
+.feedback form .form-item input.error:focus {
+  outline: none;
+  border-color: #830000; }
+
+.feedback form .form-item textarea {
+  resize: vertical;
+  padding: 10px; }
+
+.feedback form .form-item .errors-Container {
+  color: red;
+  font-weight: bold;
+  list-style: none; }
 
 .feedback form .submit-btn {
   background-color: #777777;

@@ -41,9 +41,22 @@
     <!-- ====================
             slider
     ==================== -->
-    <section class="slider">
+    <section class="slider" id="slider">
         <div class="container">
+            <button class="control left-control" id="slider-left"><</button>
+            
+            <div class="slider-element"><span class="slide-number">1</span></div>
+            <div class="slider-element"><span class="slide-number">2</span></div>
+            <div class="slider-element"><span class="slide-number">3</span></div>
+            <div class="slider-element"><span class="slide-number">4</span></div>
+            <div class="slider-element"><span class="slide-number">5</span></div>
+            <div class="slider-element"><span class="slide-number">6</span></div>
+            <div class="slider-element"><span class="slide-number">7</span></div>
+            <div class="slider-element"><span class="slide-number">8</span></div>
+            <div class="slider-element"><span class="slide-number">9</span></div>
+            <div class="slider-element"><span class="slide-number">10</span></div>
 
+            <button class="control right-control" id="slider-right">></button>
         </div>
     </section>
     <!-- ====================
@@ -51,13 +64,138 @@
     ==================== -->
     <main class="content">
         <div class="container">
-            <aside class="leftblock">
-                
-            </aside>
+            <ul class="breadcrumps">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Бытовая техника</a></li>
+            </ul>
+            <div class="catalog">
+                <aside class="leftblock">
+                    <ul class="categories">
+                        <li><a href="#">Автомобили</a>
+                            <ul class="subcategory">
+                                <li class="selected"><a href="#">Микроволновки</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомоечные машины</a></li>
+                                <li><a href="#">Чайники</a></li>
+                            </ul>
+                        </li>
+                        <li class="selected"><a href="#">Бытовая техника</a></span>
+                            <ul class="subcategory">
+                                <li class="selected"><a href="#">Микроволновки</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомоечные машины</a></li>
+                                <li><a href="#">Чайники</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Мобильная техника</a>
+                            <ul class="subcategory">
+                                <li class="selected"><a href="#">Микроволновки</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомоечные машины</a></li>
+                                <li><a href="#">Чайники</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Компьютеры</a>
+                            <ul class="subcategory">
+                                <li class="selected"><a href="#">Микроволновки</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомоечные машины</a></li>
+                                <li><a href="#">Чайники</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Одежда</a>
+                            <ul class="subcategory">
+                                <li class="selected"><a href="#">Микроволновки</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомоечные машины</a></li>
+                                <li><a href="#">Чайники</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Недвижимость</a>
+                            <ul class="subcategory">
+                                <li class="selected"><a href="#">Микроволновки</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомоечные машины</a></li>
+                                <li><a href="#">Чайники</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="price-list">
+                        <img src="img/price_list.png" alt="Прайс-лист" title="Прайс-лист" width="97" height="111">
+                        <h2>Прайс-лист</h2>
+                    </div>
+                </aside>
 
-            <section class="catalog centerblock">
-                
-            </section>
+                <section class="centerblock">
+                    <div class="store">
+                        <div class="store-item" href="#">
+                            <a href="#"><img src="img/store_item.png" alt="store item" title="store item" width="210" height="210"></a>
+                            <div class="store-item-body">
+                                <a href="?"><h4>Самый клевый чайник, который надо купить!</h4></a>
+                                <div class="store-item-footer">
+                                    <span class="price">1 900 р.</span>
+                                    <a class="buyBtn" href="?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="store-item" href="#">
+                            <a href="#"><img src="img/store_item.png" alt="store item" title="store item" width="210" height="210"></a>
+                            <div class="store-item-body">
+                                <a href="?"><h4>Самый клевый чайник, который надо купить!</h4></a>
+                                <div class="store-item-footer">
+                                    <span class="price">1 900 р.</span>
+                                    <a class="buyBtn" href="?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="store-item" href="#">
+                            <a href="#"><img src="img/store_item.png" alt="store item" title="store item" width="210" height="210"></a>
+                            <div class="store-item-body">
+                                <a href="?"><h4>Самый клевый чайник, который надо купить!</h4></a>
+                                <div class="store-item-footer">
+                                    <span class="price">1 900 р.</span>
+                                    <a class="buyBtn" href="?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="store-item" href="#">
+                            <a href="#"><img src="img/store_item.png" alt="store item" title="store item" width="210" height="210"></a>
+                            <div class="store-item-body">
+                                <a href="?"><h4>Самый клевый чайник, который надо купить!</h4></a>
+                                <div class="store-item-footer">
+                                    <span class="price">1 900 р.</span>
+                                    <a class="buyBtn" href="?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="store-item" href="#">
+                            <a href="#"><img src="img/store_item.png" alt="store item" title="store item" width="210" height="210"></a>
+                            <div class="store-item-body">
+                                <a href="?"><h4>Самый клевый чайник, который надо купить!</h4></a>
+                                <div class="store-item-footer">
+                                    <span class="price">1 900 р.</span>
+                                    <a class="buyBtn" href="?"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                    </ul>
+                    <hr>
+                    <div class="info">
+                        <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</p>
+                        <p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
     <!-- ====================
@@ -88,27 +226,30 @@
         </div>
     </footer>
      <!-- ====================
-            footer
+            feedback
     ==================== -->
     <section class="feedback" id="feedback">
-        <form action="" method="post">
+        <form action="" method="post" id="feedback-form">
             <button class="close" id="close">&#10005;</button>
             <h2>Обратная связь</h2>
             <div class="form-item">
                 <label for="name">Ваше имя *</label>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name">
+                <ul class="errors-Container"></ul>
             </div>
             <div class="form-item">
                 <label for="number">Телефон *</label>
-                <input type="phone" id="number">
+                <input type="phone" id="number" name="number">
+                <ul class="errors-Container"></ul>
             </div>
             <div class="form-item">
                 <label for="email">Email *</label>
-                <input type="email" id="email" class="error">
+                <input type="text" id="email" name="email">
+                <ul class="errors-Container"></ul>
             </div>
             <div class="form-item">
-                <label for="message">Сообщение *</label>
-                <textarea id="" id="message"></textarea>
+                <label for="message">Сообщение</label>
+                <textarea id="" id="message" rows="7"></textarea>
             </div>
             <input class="submit-btn" type="submit" value="ОТПРАВИТЬ">
         </form>
